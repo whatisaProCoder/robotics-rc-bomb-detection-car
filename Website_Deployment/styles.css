@@ -1,0 +1,264 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0px;
+    background-color: #161616;
+    /* Dark mode background color */
+    color: #e0e0e0;
+    /* Light text color for dark mode */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header {
+    background-color: #292727;
+    /* Even darker header background color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: serif;
+    font-weight: 400;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upper-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.viewport-container {
+    width: 640px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    background: #1e1e1e;
+    border: 2px solid #333;
+}
+
+.gps-panel {
+    background-color: #222121;
+    /* Dark background color */
+    color: #e0e0e0;
+    /* Light text color */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.gps-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.gps-panel th,
+.gps-panel td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.gps-panel th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.gps-panel tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+.metal-detector-panel {
+    background-color: #222121;
+    /* Dark background color */
+    color: #e0e0e0;
+    /* Light text color */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.metal-detector-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.metal-detector-panel th,
+.metal-detector-panel td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.metal-detector-panel th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.metal-detector-panel tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+.metal-detector-panel h3 {
+    color: #ff4c76;
+    /* Sleek red color */
+    font-size: 1.2em;
+    /* Slightly larger font size */
+    font-weight: bold;
+    /* Bold text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Subtle text shadow */
+}
+
+.lower-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 24px;
+}
+
+.rc-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    background-color: #222121;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #333;
+    padding: 16px;
+}
+
+.control-button {
+    background-color: #444;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #e0e0e0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #3d3636;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    /* Make it unselectable */
+    cursor: pointer;
+    /* Change cursor to pointer */
+}
+
+.control-button:hover {
+    background-color: #555;
+    /* Slightly lighter background on hover */
+    border-color: #4d4545;
+    /* Slightly lighter border on hover */
+}
+
+.rc-control-middle-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.gas-sensor-panel {
+    background-color: #222121;
+    /* Dark background color */
+    color: #e0e0e0;
+    /* Light text color */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.gas-sensor-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.gas-sensor-panel th,
+.gas-sensor-panel td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.gas-sensor-panel th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.gas-sensor-panel tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+.gas-sensor-panel h3 {
+    color: #ff4c76;
+    /* Sleek red color */
+    font-size: 1.2em;
+    /* Slightly larger font size */
+    font-weight: bold;
+    /* Bold text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Subtle text shadow */
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control Panel</title>
+  <link rel="stylesheet" href="styles.css?v=1.0" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="header">RC Bomb Detection Car - Control Panel</div>
+  <div class="upper-row">
+    <div class="gps-panel">
+      <h2>GPS Coordinates</h2>
+      <table>
+        <tr>
+          <th>Property</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Latitude</td>
+          <td id="gps-latitude-value-text">-</td>
+        </tr>
+        <tr>
+          <td>Longitude</td>
+          <td id="gps-longitude-value-text">-</td>
+        </tr>
+        <tr>
+          <td>Speed (km/h)</td>
+          <td id="gps-speed-value-text">-</td>
+        </tr>
+        <tr>
+          <td>Altitude</td>
+          <td id="gps-altitude-value-text">-</td>
+        </tr>
+      </table>
+    </div>
+    <div class="viewport-container">
+      <img width="640" height="480" alt="ESP32-CAM Stream" id="espCamStream">
+    </div>
+    <div class="metal-detector-panel">
+      <h2>Metal Detector</h2>
+      <table>
+        <tr>
+          <th>Property</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Sensor Value</td>
+          <td id="metal-detector-sensor-value">-</td>
+        </tr>
+        <tr>
+          <td>Detected?</td>
+          <td id="metal-detector-detected-text">No</td>
+        </tr>
+      </table>
+      <h3 id="metal-detector-alert-text">No Metal Detected!</h2>
+    </div>
+  </div>
+  <div class="lower-row">
+    <div class="gas-sensor-panel">
+      <h2>Gas Sensor</h2>
+      <table>
+        <tr>
+          <th>Property</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Sensor Value</td>
+          <td id="gas-sensor-value-text">-</td>
+        </tr>
+        <tr>
+          <td>Detected?</td>
+          <td id="gas-sensor-detected-text">No</td>
+        </tr>
+      </table>
+      <h3 id="gas-sensor-alert-text">No Gas Detected!</h2>
+    </div>
+    <div class="rc-control">
+      <div class="control-button" onclick="sendCommand('forward')">↑</div>
+      <div class="rc-control-middle-container">
+        <div class="control-button" onclick="sendCommand('left')">←</div>
+        <div class="control-button" style="font-size: 40px; padding-bottom:5px; padding-left:2px; padding-right:2px"
+          onclick="sendCommand('stop')">
+          ■
+        </div>
+        <div class="control-button" onclick="sendCommand('right')">→</div>
+      </div>
+      <div class="control-button" onclick="sendCommand('backward')">↓</div>
+      <div class="slider-container">
+        <label for="speedSlider">Speed</label>
+        <input type="range" min="1" max="100" value="50" class="slider" id="speedSlider">
+      </div>
+    </div>
+    <div class="gas-sensor-panel">
+      <h2>RF Sensor</h2>
+      <table>
+        <tr>
+          <th>Property</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Sensor Value</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Detected?</td>
+          <td>No</td>
+        </tr>
+      </table>
+      <h3>No RF Detected!</h2>
+    </div>
+  </div>
+</body>
+
+</html>
